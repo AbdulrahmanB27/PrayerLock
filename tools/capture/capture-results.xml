@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.MarketingCaptureTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-10-29T21:44:59.036Z" hostname="ABDULRAHMANSLAP" time="23.878">
+  <properties/>
+  <testcase name="adhkar" classname="com.example.MarketingCaptureTest" time="16.666"/>
+  <testcase name="homeFajr" classname="com.example.MarketingCaptureTest" time="0.728"/>
+  <testcase name="homeIsha" classname="com.example.MarketingCaptureTest" time="0.397"/>
+  <testcase name="qibla" classname="com.example.MarketingCaptureTest" time="0.545"/>
+  <testcase name="homeMaghrib" classname="com.example.MarketingCaptureTest" time="0.361"/>
+  <testcase name="homeAsr" classname="com.example.MarketingCaptureTest" time="0.414"/>
+  <testcase name="prayerShield" classname="com.example.MarketingCaptureTest" time="0.375"/>
+  <testcase name="homeDhuhr" classname="com.example.MarketingCaptureTest" time="0.623"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

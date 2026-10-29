@@ -1,0 +1,8 @@
+_site/
+release/
+output/
+.playwright-mcp/
+node_modules/
+brag-output/hyperframes-guidance/
+brag-output/composition/node_modules/
+brag-output/composition/.hyperframes/

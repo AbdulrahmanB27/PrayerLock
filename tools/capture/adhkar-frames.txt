@@ -1,0 +1,9 @@
+file '../../assets/screenshots/adhkar-step-00.png'
+duration 1.4
+file '../../assets/screenshots/adhkar-step-01.png'
+duration 0.9
+file '../../assets/screenshots/adhkar-step-02.png'
+duration 0.9
+file '../../assets/screenshots/adhkar-step-03.png'
+duration 1.5
+file '../../assets/screenshots/adhkar-step-03.png'

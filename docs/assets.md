@@ -1,0 +1,9 @@
+# Asset provenance
+
+- Five sky design previews in `assets/images/{fajr,dhuhr,asr,maghrib,isha}.png` come directly from `App/prayerlock/public/assets/aistudio/prayerlock_*`. They are design references, not asserted to be captures from a running Android device. The site labels them accordingly. Prayer times and locations in these files are illustrative.
+- `assets/images/app-icon.svg` uses the paths and fill colors from the app's `res/drawable/ic_lock_logo_vector.xml`, with the dark gradient specified by `ic_launcher_background.xml`. The original launcher WebP is malformed in the supplied export, so its usable vector equivalent is used.
+- `assets/fonts/plus-jakarta-variable.ttf` is Plus Jakarta Sans from the [Google Fonts repository](https://github.com/google/fonts/tree/main/ofl/plusjakartasans). Its SIL Open Font License is adjacent in `assets/fonts/OFL.txt`. The app uses the same family; the original app file is a single regular weight, so the website uses the variable release for deliberate typography. The website makes no remote font request.
+- The focus illustration is a website explanation of distraction blocking, not a screenshot. Its markup is intentionally labeled as an illustration for assistive technology.
+- /brag media source and rendering notes live in `brag-output/` and are excluded by the deployment workflow.
+- The live page uses actual source-rendered Android Compose screens in `assets/screenshots/`, captured with a test-only Robolectric/Roborazzi harness and controlled sample values. See `docs/screenshots.md` for exact provenance. These are production UI renders, not physical-device photographs; no Android app files were modified.
+- The hero sky GIF cycles those five real Home screens. The Adhkar GIF records actual repetition-counter click states. Both have static fallbacks and respect the page's pause control and the visitor's reduced-motion setting.
