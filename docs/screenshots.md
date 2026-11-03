@@ -1,42 +1,51 @@
-# PrayerLock UI captures
+# Current screenshot refresh — November 3, 2026
 
-These PNGs are actual Android Compose renders of the app source in `App/prayerlock`, captured on 2026-10-29. They are not the pre-existing AI Studio design concepts, browser recreations, or photographs of a physical device.
+All visible website screenshots and both language GIF sets now use the version 1.1 export. There are 36 native 780 × 1688 captures and 28 passed native tests. Production main-source hashes match all 81 current files. The public timetable options image uses a genuine scrolled seven-row state, including optional Sunrise and Last Third. Harness, sample settings, hashes and limitations are in `Website/tools/capture/refresh-20261103/` in the local workspace. Public-path integration hashes are in `Website/output/current-screenshot-integration.json`. Earlier provenance below is historical.
 
-The production Kotlin UI files were copied without changes to a temporary build at `C:/Users/abody/AppData/Local/Temp/PrayerLock-capture-20261029`. A test-only harness rendered the production composables using Robolectric API 35 native graphics and Roborazzi 1.59.0. No changes were made to the app checkout and no emulator was installed or launched.
+# PrayerLock UI capture provenance
 
-All eight captures are 780 × 1688 pixels at a 390 × 844 dp viewport. They omit operating-system status and navigation bars. Home uses the actual `HomeTabScreen` and `CustomBottomNavigation` composables inside the same gradient/scaffold structure used by the app dashboard. Qibla and Adhkar use the actual `QiblaCompassScreen` and `AdhkarTabScreen`. The prayer shield uses the actual `OverlayContent` composable.
+The website uses a mixture of retained October 29 captures and refreshed October 31 Qibla/Adhkar captures. All are genuine Android Compose source renders. They are not AI Studio design concepts, browser recreations, physical-device photographs, or live device recordings.
 
-Sample prayer times and location were supplied by the harness: Lower Swatara Township, Fajr 5:55 am, sunrise 7:25 am, Dhuhr 12:39 pm, Asr 3:45 pm, Maghrib 6:17 pm, Isha 7:32 pm. These are demonstration values, not a live prayer timetable. Qibla uses sample coordinates 40.1965, -76.7436 with a simulated phone heading of north. Moon and Hijri-date rendering use the capture date. Each Home sky state is explicitly selected to demonstrate its corresponding theme. The prayer-shield countdown shows its initial state.
+## Asset origins
 
-Files:
+All website PNGs in `assets/screenshots/` are 780 × 1688 pixels, rendered natively at 390 × 844 dp and xhdpi. Operating-system bars are omitted; none were fabricated.
 
-- `home-fajr.png`, `home-dhuhr.png`, `home-asr.png`, `home-maghrib.png`, `home-isha.png`
-- `qibla.png`, `adhkar.png`, `prayer-shield.png`
+| Files | Capture origin |
+| --- | --- |
+| `home-fajr.png`, `home-dhuhr.png`, `home-asr.png`, `home-maghrib.png`, `home-isha.png`, `prayer-shield.png` | October 29 source snapshot; retained byte-for-byte during the UI refresh |
+| `qibla.png`, `adhkar.png` | Updated app source captured October 31, about 23:18 UTC |
+| `adhkar-step-00.png` through `adhkar-step-04.png` | Updated Adhkar source and real UI interactions, captured October 31 |
 
-The harness and passing XML result are in `Website/tools/capture/`. The initial screenshot batch passed: 8 tests, 0 failures, 0 errors. A valid Android SDK and Gradle are required to reproduce; the original app export does not include a Gradle wrapper.
+The initial screenshot batch passed 8 tests, with 0 failures and 0 errors. Its historical harness and XML result remain in `tools/capture/`. The older interaction-only result there records 1 passing test; it does not describe the replacement five-frame sequence.
 
-## Adhkar interaction GIF
+The refresh used an isolated copy of the current `App/prayerlock` source, Robolectric API 35 native graphics, Roborazzi 1.59.0, Gradle 9.5.0, and Android Studio JBR. It called the production `QiblaCompassScreen`, `AdhkarTabScreen`, and `CustomBottomNavigation` composables with the dashboard's gradient/scaffold structure. No production app files were edited, and no emulator or SDK was installed.
 
-`Website/assets/media/prayerlock-adhkar.gif` shows actual Adhkar composable states captured after its production click handler increments the first remembrance counter: 0, 1, 2, and the completed checkmark with the full progress ring. The capture stops at completion; it does not show progression to the next remembrance. Four original 780 × 1688 PNG frames are retained as `adhkar-step-00.png` through `adhkar-step-03.png`. `prayerlock-adhkar.png` is the static first-frame fallback.
+## Demonstration data
 
-FFmpeg encoded the four source frames as a looping 520 × 1125 GIF, 6.2 seconds long, 156,958 bytes. The frame list and hold times are in `Website/tools/capture/adhkar-frames.txt`. The output was probed for dimensions/duration and fully decoded with FFmpeg without errors. This is an interaction demonstration assembled from real Android-rendered states, not a physical-device screen recording. It contains no account or personal data.
+The retained Home captures use the original fixture: Lower Swatara Township; Fajr 5:55 am, sunrise 7:25 am, Dhuhr 12:39 pm, Asr 3:45 pm, Maghrib 6:17 pm, and Isha 7:32 pm. These are demonstration values, not a live prayer timetable. Their moon and Hijri date reflect the original capture date.
 
-The final interaction-only test passed: 1 test, 0 failures, 0 errors. Evidence is retained in `Website/tools/capture/interaction-results.xml`.
+The refreshed Qibla fixture uses public New York coordinates 40.7128, -74.0060 and a simulated north-facing phone heading. It is not a sensor-accuracy or physical calibration test. The refreshed Adhkar view uses the production Maghrib list, now 15 items, and its default Arabic font preference. No account or personal data is included.
 
-Suggested visible caption: "Count each remembrance, one tap at a time."
+## Refreshed Adhkar interaction states
 
-Suggested alternative text: "PrayerLock Adhkar counter advances from zero through two, then shows completion."
+| Frame | Actual rendered state |
+| --- | --- |
+| `adhkar-step-00.png` | First remembrance, counter 0 of 3 |
+| `adhkar-step-01.png` | Counter 1 of 3 after the production click handler |
+| `adhkar-step-02.png` | Counter 2 of 3 after the second click |
+| `adhkar-step-03.png` | Completed checkmark about 116 ms after the third click; the progress ring is still animating |
+| `adhkar-step-04.png` | Second remembrance, page 2 of 15, counter 0 of 1 |
 
-Capture command from the temporary project, with Android Studio JBR as `JAVA_HOME` and the installed SDK as `ANDROID_HOME`:
+The production code schedules automatic page advancement after 350 ms. Native test-clock settlement of that animation stalled in the harness, so frame 04 was reached using the production pager's accessibility scroll-to-index action. The next-page and reset-counter semantics were asserted. These are real UI states assembled into a demonstration, not a real-time recording of automatic advancement. Keep the completed frame brief when encoding media; the agreed hold is 0.3 seconds before the next remembrance.
 
-```powershell
-gradle ':app:testDebugUnitTest' '--tests' 'com.example.MarketingCaptureTest' '-Proborazzi.test.record=true' '--console=plain'
-```
+The GIF at `assets/media/prayerlock-adhkar.gif` and film are derived media assembled from these states. Their encoding output is maintained by the media workflow; the earlier four-frame GIF's size and completion-only description are historical, not specifications of the refreshed media.
 
-Production source SHA-256:
+Suggested caption: "Count each remembrance, one tap at a time."
 
-```text
-MainActivity.kt        A18E018765F2C25FB1F77B45697350004E70A6B65D93D6D4063E75E62DFB7AC2
-AdhkarTab.kt           9F031D2E3F7CE0B3CD3CE43A25B1869050E8141279AF07B99168F1997C9D764D
-LockoutOverlayService.kt FB02293C4E69A25427C639424EE4A561A2DC7EC07CADD870CC006F7EF954AB5C
-```
+Suggested alternative text: "PrayerLock's Adhkar counter advances to completion, then shows the next remembrance."
+
+## Evidence and verification
+
+The fresh capture harness, source hashes, source delta, four XML results, and published PNG manifest are retained in [the October 31 refresh snapshot](../../PlayStore/source/capture/refresh-20261031-1907/README.md). The refresh passed 10 tests: 3 website, 3 phone, and 2 for each tablet viewport; 0 failures and 0 errors.
+
+On November 1, a read-only verification confirmed that all 80 current production source/resource files still match that snapshot, all 14 published website/Play Store refresh images match their hashes and expected RGB24 dimensions, and all 16 unaffected Home/shield PNGs remain byte-identical. No images were recaptured during this verification. The retained October 29/earlier October 31 stills are not presented as newly captured from the updated source.

@@ -1,0 +1,121 @@
+@font-face {
+  font-family: Tajawal;
+  src: url("assets/fonts/tajawal-regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: Tajawal;
+  src: url("assets/fonts/tajawal-bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600 900;
+  font-display: swap;
+}
+/* Arabic keeps the product's open layout, with room for connected letterforms. */
+html[lang="ar"] body {
+  font-family: Tajawal, "Segoe UI", sans-serif;
+  line-height: 1.85;
+}
+html[lang="ar"] h1,
+html[lang="ar"] h2,
+html[lang="ar"] h3,
+html[lang="ar"] p,
+html[lang="ar"] span,
+html[lang="ar"] a,
+html[lang="ar"] button {
+  letter-spacing: normal;
+}
+html[lang="ar"] h1 {
+  font-size: clamp(62px, 7.4vw, 100px);
+  line-height: 1.3;
+}
+html[lang="ar"] h2,
+html[lang="ar"] .get-app h2,
+html[lang="ar"] .section-copy h2 {
+  line-height: 1.4;
+}
+html[lang="ar"] .brand {
+  direction: ltr;
+  font-family: Jakarta, sans-serif;
+  letter-spacing: -0.8px;
+}
+html[lang="ar"] .nav-links {
+  font-size: 14px;
+}
+html[lang="ar"] .hero-description {
+  line-height: 1.9;
+}
+html[lang="ar"] .skip-link {
+  left: auto;
+  right: 18px;
+}
+html[lang="ar"] .hero-visual {
+  direction: ltr;
+}
+html[lang="ar"] .scroll-link {
+  margin-left: 0;
+  margin-right: 28px;
+}
+html[lang="ar"] .button svg,
+html[lang="ar"] .text-link > svg,
+html[lang="ar"] .policy-back > span {
+  transform: scaleX(-1);
+}
+html[lang="ar"] .sky-selector-wrap {
+  padding-left: 0;
+  padding-right: 38px;
+}
+html[lang="ar"] .sky-selector button {
+  padding: 10px 10px 10px 17px;
+  text-align: right;
+}
+html[lang="ar"] .sky-line {
+  line-height: 1.65;
+}
+html[lang="ar"] .feature-list h3 {
+  line-height: 1.6;
+}
+html[lang="ar"] .film-language-note {
+  color: var(--muted);
+  font-size: 12px;
+  text-align: center;
+  margin-top: 8px;
+}
+html[lang="ar"] .policy-document h1 {
+  font-size: 55px;
+  line-height: 1.5;
+}
+html[lang="ar"] .policy-document h2 {
+  line-height: 1.65;
+}
+html[lang="ar"] .policy-document ul {
+  padding-left: 0;
+  padding-right: 22px;
+}
+html[lang="ar"] .policy-document li {
+  padding-left: 0;
+  padding-right: 4px;
+}
+html[lang="ar"] a[href^="mailto:"] {
+  direction: ltr;
+  unicode-bidi: isolate;
+  display: inline-block;
+}
+@media (max-width: 1000px) {
+  html[lang="ar"] .sky-selector-wrap { padding-right: 0; }
+}
+@media (max-width: 760px) {
+  html[lang="ar"] h1 { font-size: clamp(55px, 15vw, 70px); }
+  html[lang="ar"] .nav-links { font-size: 12px; gap: 18px; }
+  html[lang="ar"] .hero-visual { left: auto; right: 50%; transform: translateX(50%); }
+  html[lang="ar"] .scroll-link { margin-right: 0; }
+  html[lang="ar"] .sky-selector button { padding: 9px 12px; }
+  html[lang="ar"] .sky-stage { height: 790px; }
+  html[lang="ar"] .film-heading { align-items: center; gap: 22px; }
+  html[lang="ar"] .policy-document h1 { font-size: 42px; }
+}
+@media (max-width: 380px) {
+  html[lang="ar"] .nav-links { gap: 13px; }
+  html[lang="ar"] .sky-selector button { padding-inline: 10px; }
+}

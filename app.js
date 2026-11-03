@@ -5,7 +5,38 @@
   const stage = document.querySelector(".sky-stage");
   const skyImage = document.querySelector("#sky-image");
   const film = document.querySelector("#product-film");
-  const skies = {
+  const arabic = document.documentElement.lang === "ar";
+  const skyTemplate = skyImage?.getAttribute("src").replace(
+    /home-(fajr|dhuhr|asr|maghrib|isha)\.png/,
+    "home-{prayer}.png",
+  );
+  const skies = arabic ? {
+    fajr: {
+      period: "سكينة ما قبل الفجر",
+      line: "بداية جديدة.<br> ومساحة للصلاة.",
+      description: "بنفسجي ما قبل الفجر",
+    },
+    dhuhr: {
+      period: "وقفة في منتصف النهار",
+      line: "خذ نفسًا.<br> وعد إلى اللحظة.",
+      description: "زرقة الظهيرة الصافية",
+    },
+    asr: {
+      period: "لحظة وصل في العصر",
+      line: "تمهّل قليلًا.<br> واستعد سكينتك.",
+      description: "ألوان العصر الدافئة",
+    },
+    maghrib: {
+      period: "حين تغيب الشمس",
+      line: "دع يومك يهدأ.<br> وأفسح وقتًا للصلاة.",
+      description: "ألوان الغروب الوردية",
+    },
+    isha: {
+      period: "ختام يسوده الهدوء",
+      line: "ابتعد عن الضجيج.<br> واختم يومك بنيّة.",
+      description: "زرقة الليل العميقة",
+    },
+  } : {
     fajr: {
       period: "The quiet before dawn",
       line: "Begin again.<br> Make space for prayer.",
@@ -41,8 +72,8 @@
       motionToggle.hidden = motionQuery.matches;
       motionToggle.setAttribute("aria-pressed", String(paused));
       motionToggle.querySelector(".motion-label").textContent = paused
-        ? "Resume motion"
-        : "Pause motion";
+        ? (arabic ? "استئناف الحركة" : "Resume motion")
+        : (arabic ? "إيقاف الحركة" : "Pause motion");
       motionToggle.querySelector(".motion-symbol").textContent = paused
         ? "▷"
         : "Ⅱ";
@@ -73,12 +104,16 @@
       const sky = skies[prayer];
       if (!sky || !stage || !skyImage) return;
       stage.dataset.sky = prayer;
-      skyImage.src = `assets/screenshots/home-${prayer}.png`;
-      skyImage.alt = `PrayerLock ${button.textContent.trim()} Android screen`;
+      skyImage.src = skyTemplate.replace("{prayer}", prayer);
+      skyImage.alt = arabic
+        ? `شاشة ${button.textContent.trim()} في تطبيق PrayerLock على أندرويد`
+        : `PrayerLock ${button.textContent.trim()} Android screen`;
       document.querySelector(".sky-period").textContent = sky.period;
       document.querySelector(".sky-line").innerHTML = sky.line;
       document.querySelector("#sky-announcement").textContent =
-        `${button.textContent.trim()}. ${sky.description}. Example prayer times.`;
+        arabic
+          ? `${button.textContent.trim()}. ${sky.description}. مواقيت الصلاة المعروضة أمثلة توضيحية.`
+          : `${button.textContent.trim()}. ${sky.description}. Example prayer times.`;
       document
         .querySelectorAll("[data-prayer]")
         .forEach((item) =>

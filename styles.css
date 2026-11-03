@@ -148,6 +148,14 @@ button {
 .nav-links a {
   padding-block: 8px;
 }
+.language-switch {
+  white-space: nowrap;
+}
+.nav-links .language-switch {
+  border: 1px solid var(--line);
+  border-radius: 100px;
+  padding: 5px 13px;
+}
 .nav-links a:hover,
 .text-link:hover,
 .contact-link:hover {
@@ -673,6 +681,49 @@ h2 {
   color: var(--muted);
   margin-top: 15px;
 }
+.routine-section {
+  background: var(--mist);
+}
+.routine-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: center;
+  gap: 110px;
+}
+.routine-details {
+  margin: 36px 0 0;
+  max-width: 420px;
+}
+.routine-details > div + div {
+  margin-top: 26px;
+  padding-top: 26px;
+  border-top: 1px solid #dde2e9;
+}
+.routine-details dt {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.routine-details dd {
+  margin: 9px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.85;
+}
+.routine-figure {
+  justify-self: center;
+  width: min(100%, 290px);
+}
+.routine-device {
+  width: 100%;
+  aspect-ratio: 780/1688;
+}
+.routine-figure figcaption {
+  margin-top: 20px;
+  font-size: 10px;
+  color: var(--muted);
+  text-align: center;
+}
 .film-section {
   background: #f5f6f8;
   padding-top: 86px;
@@ -708,6 +759,16 @@ h2 {
   color: var(--muted);
   text-align: center;
   margin-top: 22px;
+}
+.film-credits {
+  margin-top: 9px;
+  color: var(--muted);
+  font-size: 10px;
+  text-align: center;
+}
+.film-credits a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 .get-app {
   text-align: center;
@@ -1006,6 +1067,9 @@ html.motion-paused {
   .focus-grid {
     gap: 40px;
   }
+  .routine-grid {
+    gap: 50px;
+  }
   .focus-demo {
     scale: 0.9;
   }
@@ -1045,14 +1109,17 @@ html.motion-paused {
     height: 31px;
   }
   .nav-links {
-    gap: 22px;
+    gap: 16px;
     font-size: 11px;
   }
-  .nav-links > a:first-child {
+  .nav-links > a[href$="#experience"] {
     display: none;
   }
   .nav-availability {
     gap: 7px;
+  }
+  .nav-links .nav-availability {
+    display: none;
   }
   .hero {
     padding-top: 53px;
@@ -1139,6 +1206,16 @@ html.motion-paused {
   .focus-grid {
     grid-template-columns: 1fr;
     gap: 36px;
+  }
+  .routine-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+  .routine-figure {
+    width: 240px;
+  }
+  .routine-details {
+    max-width: none;
   }
   .section-copy > p:not(.section-kicker) {
     font-size: 13px;

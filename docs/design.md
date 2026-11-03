@@ -19,3 +19,9 @@ The static policy reproduces the in-app text and effective date, with the suppli
 - Verify all relative links/assets, policy text parity, keyboard controls, mobile/desktop overflow, media playback and reduced motion. Inspect rendered desktop/mobile screenshots and correct issues.
 
 No runtime dependencies, analytics, third-party font requests, backend or database. This directory is not currently a Git repository; no commits or remote publication are part of this implementation.
+
+## Qibla/Adhkar refresh
+
+The October 31 app export is the source for the refreshed Qibla and Adhkar captures. Website, phone and tablet images, the Adhkar interaction GIF and the film's corresponding scene use these new renders. Home, sky and prayer-shield captures retain their original source snapshot. The November 1 handoff rebuilds the same static-site and Play Store archives.
+
+At the user's request, the site policy reproduces the updated native Permissions and Local Storage text while retaining its original effective date and supplied contact. Promotional copy now describes reminders and focus sessions rather than active Accessibility Service enforcement. The separate lockout implementation and native-policy inconsistencies are recorded in the source-review notes; the asset refresh does not change app behavior.

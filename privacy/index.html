@@ -12,9 +12,11 @@
     <link
       rel="icon"
       type="image/svg+xml"
-      href="../assets/images/app-icon.svg"
+      href="../assets/images/app-icon.svg?v=20261103-v11"
     />
-    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../styles.css?v=20261103-v11" />
+    <link rel="alternate" hreflang="en" href="./" />
+    <link rel="alternate" hreflang="ar" href="../ar/privacy/" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to policy</a>
@@ -22,7 +24,7 @@
       <nav class="nav wrap" aria-label="Main navigation">
         <a class="brand" href="../"
           ><img
-            src="../assets/images/app-icon.svg"
+            src="../assets/images/app-icon.svg?v=20261103-v11"
             alt=""
             width="34"
             height="34"
@@ -31,6 +33,7 @@
         <div class="nav-links">
           <a href="../#experience">The experience</a
           ><a href="./" aria-current="page">Privacy</a
+          ><a class="language-switch" href="../ar/privacy/" lang="ar" hreflang="ar" dir="rtl">العربية</a
           ><a class="nav-availability" href="../#get-app"
             >For Android <span aria-hidden="true">↗</span></a
           >
@@ -44,7 +47,7 @@
           <nav aria-label="Privacy policy sections">
             <a href="#data">Data collection and usage</a
             ><a href="#permissions">Permissions</a
-            ><a href="#offline">Offline first</a
+            ><a href="#storage">Local Storage</a
             ><a href="#changes">Changes to this policy</a
             ><a href="#contact">Contact</a>
           </nav>
@@ -76,36 +79,42 @@
           <section id="permissions">
             <h2>2. Permissions</h2>
             <p>
-              To function as intended, PrayerLock requires the following
+              To function as intended, PrayerLock uses the following
               permissions:
             </p>
             <ul>
               <li>
-                <strong>Location Permissions:</strong> Used strictly to
-                auto-detect your timezone and calculate accurate local prayer
-                times. Location data is never shared.
+                <strong>Location &amp; Geocoding:</strong> Used locally to
+                calculate accurate prayer times, Qibla direction, and optional
+                geofenced lockout/Masjid zones. When you search for a city or
+                resolve a GPS coordinate label, Android&#x27;s Geocoder service
+                may query network geocoding providers.
               </li>
               <li>
-                <strong
-                  >Accessibility Service &amp; Draw Over Other Apps:</strong
-                >
-                Used exclusively to enforce the focus lockout screen over active
-                applications during prayer times, and to navigate back to the
-                home screen if bypassed. We do not monitor your keystrokes,
-                screen contents, or history through this service.
+                <strong>Draw Over Other Apps:</strong> Used exclusively to
+                display the full-screen focus lockout reminder during prayer
+                times. We do not read screen contents, keystrokes, or personal
+                messages.
               </li>
               <li>
-                <strong>Notifications:</strong> Used to remind you of upcoming
-                active lockout periods.
+                <strong>App Visibility (&lt;queries&gt;):</strong> Used strictly
+                on-device so you can choose which launchable apps are exempted
+                or restricted during prayer/Tahseen/interval windows. Your app
+                list never leaves your device.
+              </li>
+              <li>
+                <strong>Notifications, Alarms &amp; Audio/DND:</strong> Used to
+                trigger exact prayer reminders, Adhan audio, and optional Masjid
+                vibrate mode.
               </li>
             </ul>
           </section>
-          <section id="offline">
-            <h2>3. Offline First</h2>
+          <section id="storage">
+            <h2>3. Local Storage</h2>
             <p>
-              All your preferences are saved locally using Android's built-in
-              SharedPreferences system. Since there is no remote server to sync
-              to, your data remains yours and yours alone.
+              All your schedules and preferences are stored on your device using
+              Android SharedPreferences. PrayerLock does not operate any remote
+              analytics or tracking servers.
             </p>
           </section>
           <section id="changes">
@@ -132,7 +141,7 @@
       <div class="wrap footer-content">
         <a class="brand" href="../"
           ><img
-            src="../assets/images/app-icon.svg"
+            src="../assets/images/app-icon.svg?v=20261103-v11"
             width="28"
             height="28"
             alt=""

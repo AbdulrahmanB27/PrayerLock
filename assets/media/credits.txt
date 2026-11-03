@@ -1,0 +1,19 @@
+PrayerLock product film — November 3, 2026
+
+Music: Happy Beats / Business Moves Vol. 12 by Sascha Ende, ende.app.
+Music: Sascha Ende, ende.app (CC BY 4.0)
+Artist: https://ende.app/en
+Source license: https://ende.app/en/standard-license
+License: https://creativecommons.org/licenses/by/4.0/
+Changes: excerpt trimmed, faded and mixed at a reduced volume for the film.
+
+Sound effects: Kenney (CC0).
+https://kenney.nl/
+https://creativecommons.org/publicdomain/zero/1.0/
+
+Visuals: PrayerLock's native Android interface and original app icon, rendered
+from the supplied app source with controlled sample data. Website typography
+uses self-hosted Plus Jakarta Sans and Tajawal; font license files accompany
+the site in assets/fonts/.
+
+Created using the /brag workflow and local Hyperframes rendering.
