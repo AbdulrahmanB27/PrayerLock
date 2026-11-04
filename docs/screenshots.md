@@ -1,3 +1,9 @@
+# Current screenshot refresh — November 4, 2026
+
+All visible phone screenshots use the latest native export, favouring genuine Dhuhr/Asr daytime colors. Main features now use brighter native Qibla, Adhkar and Dhuhr focus views; the hero uses Fajr, Dhuhr and Asr. Five original prayer moments remain in the interactive selector. The widget gallery uses three actual English native widget renders, explicitly labelled English on the Arabic page. No image was recolored and no separate light theme is claimed.
+
+Usable capture provenance: `Website/tools/capture/refresh-20261104/README.md` and `capture-manifest.json` in the local workspace. Public-path hashes and the source selection are in `Website/output/nov4-screenshot-integration.json`. Earlier records below are historical.
+
 # Current screenshot refresh — November 3, 2026
 
 All visible website screenshots and both language GIF sets now use the version 1.1 export. There are 36 native 780 × 1688 captures and 28 passed native tests. Production main-source hashes match all 81 current files. The public timetable options image uses a genuine scrolled seven-row state, including optional Sunrise and Last Third. Harness, sample settings, hashes and limitations are in `Website/tools/capture/refresh-20261103/` in the local workspace. Public-path integration hashes are in `Website/output/current-screenshot-integration.json`. Earlier provenance below is historical.

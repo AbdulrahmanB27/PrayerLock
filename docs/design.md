@@ -1,5 +1,7 @@
 # PrayerLock website
 
+November 4 refinement: keep the white/mist/ink palette and existing layout, favour authentic daytime product imagery, replace the substitute focus icon with the native transparent dark mark, and integrate the language control into navigation with a globe and separator. The new widget strip shows actual native variants without extra decorative card shells. Earlier design notes below are historical.
+
 Build a quiet product page and a permanent `/privacy/` document for the Android app. The user's priorities are an Apple-like presentation, white space, screenshots, GIFs, motion, and free static hosting on GitHub Pages. All website work stays in `Website`; the Android project is unchanged.
 
 ## Design decisions

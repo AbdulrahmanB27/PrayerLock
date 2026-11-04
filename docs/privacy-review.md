@@ -1,6 +1,6 @@
 # Specific policy review notes
 
-Historical review: the November 3 app export is now covered by [the current alignment review](source-refresh-20261103.md). Use that report for present behavior, manifest changes and policy parity.
+Historical review: the November 4 app export is now covered by [the current alignment review](source-refresh-20261104.md). Use that report for present behavior, manifest changes and policy parity.
 
 The public policy was synchronized again on October 31, 2026 from `App/prayerlock/app/src/main/java/com/example/MainActivity.kt`, `NativePrivacyPolicyDialog` (near lines 7509–7596 in this export), with the supplied contact `prayerlockapp@gmail.com` retained. Its effective date remains January 1, 2024, as written in the app. The Android app has not been modified by this refresh.
 

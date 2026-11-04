@@ -4,7 +4,7 @@ A static product page and privacy policy for PrayerLock. No build, package insta
 
 Production: [English](https://abdulrahmanb27.github.io/PrayerLock/) · [Arabic](https://abdulrahmanb27.github.io/PrayerLock/ar/) · [Privacy policy](https://abdulrahmanb27.github.io/PrayerLock/privacy/) · [Arabic policy](https://abdulrahmanb27.github.io/PrayerLock/ar/privacy/). Repository: [AbdulrahmanB27/PrayerLock](https://github.com/AbdulrahmanB27/PrayerLock).
 
-The November 3 refresh follows app version 1.1: current native screens in both languages, supplementary Sunrise/Last Third timetable options, broader Arabic localization, the updated icon, and a new 22-second /brag film. The supplied privacy body and effective date are unchanged. Source evidence is in [the current alignment review](docs/source-refresh-20261103.md).
+The November 4 refresh follows the latest source export (still version 1.1): brighter native daytime screens, Pre-Adhan reminders, expandable Hadith references, revised Qibla controls, six widgets and a new 22-second /brag film. The focus illustration uses the transparent brand mark, and the language switch is integrated into the navigation. The English privacy text and date remain unchanged; the public Arabic policy retains the fuller translation. Source evidence is in [the current alignment review](docs/source-refresh-20261104.md).
 
 ## Preview locally
 
@@ -16,7 +16,7 @@ python -m http.server 4173
 
 Open `http://localhost:4173/`. The policy is at `http://localhost:4173/privacy/` and works with JavaScript disabled.
 
-The Arabic site is at `http://localhost:4173/ar/`, with its privacy translation at `/ar/privacy/`. Language links switch between matching English and Arabic pages. Both languages use static HTML and relative paths. Arabic uses self-hosted Tajawal, right-to-left layout, translated controls, native Arabic-mode screenshots and GIFs, and Arabic captions for the existing English film. Some app labels remain English; the captures preserve them. See [localization notes](docs/localization.md).
+The Arabic site is at `http://localhost:4173/ar/`, with its privacy translation at `/ar/privacy/`. Language links switch between matching English and Arabic pages. Both languages use static HTML and relative paths. Arabic uses self-hosted Tajawal, right-to-left layout, translated controls, native Arabic-mode screenshots and GIFs, and Arabic captions for the existing English film. Phone screens use the native Arabic UI; widget examples on the Arabic page are labelled English. See [localization notes](docs/localization.md).
 
 ## Publish on GitHub Pages
 
@@ -36,7 +36,7 @@ GitHub's [official Pages workflow guide](https://docs.github.com/en/pages/gettin
 
 ## Before the Google Play submission
 
-The website reproduces the native policy, including its Permissions and Local Storage sections, **January 1, 2024** effective date, and supplied contact address. All four substantive blocks still match the current source. [The current source review](docs/source-refresh-20261103.md) records remaining policy/implementation differences. The notes are excluded from the Pages deployment. Hosting a policy does not establish Google Play approval.
+The website reproduces the native policy, including its Permissions and Local Storage sections, **January 1, 2024** effective date, and supplied contact address. All four substantive blocks still match the current source. [The current source review](docs/source-refresh-20261104.md) records remaining policy/implementation differences. The notes are excluded from the Pages deployment. Hosting a policy does not establish Google Play approval.
 
 The app's current `privacyUrl` opens the homepage; the dedicated policy route is `/PrayerLock/privacy/`. The website refresh does not modify Android source.
 
@@ -49,7 +49,7 @@ In `index.html` and `ar/index.html`, replace the “Coming soon” link/status w
 - `index.html`, `styles.css`, `app.js`: the product page, responsive layout and progressive interactions.
 - `privacy/index.html`: the independent policy document.
 - `assets/`: self-hosted brand/fonts, current native Android screens in both languages, four GIFs and the 22-second /brag film with captions.
-- `brag-output-2026-11-03-181021/`: current editable /brag composition, storyboard, render, credits and share copy in the local workspace. Excluded from deployment.
+- `brag-output-2026-11-04-152322/`: current editable /brag composition, storyboard, render, credits and share copy in the local workspace. Excluded from deployment.
 - `docs/`: design decisions, asset provenance and source-audit notes. Excluded from deployment.
 - `output/playwright/`: local visual QA screenshots. Excluded from deployment.
 - `release/prayerlock-pages.zip`: a compact, ready-to-upload repository snapshot.

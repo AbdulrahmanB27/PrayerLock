@@ -1,6 +1,6 @@
 # Source observation during the Qibla/Adhkar asset refresh
 
-Historical review: the November 3 app export is now covered by [the current alignment review](source-refresh-20261103.md). Use that report for present behavior, manifest changes and policy parity.
+Historical review: the November 4 app export is now covered by [the current alignment review](source-refresh-20261104.md). Use that report for present behavior, manifest changes and policy parity.
 
 The screenshot refresh uses the updated Android export and preserves the app files. It does not certify the app's runtime or release readiness. This note records a separate, concrete source finding rather than treating a UI capture as an enforcement test.
 
