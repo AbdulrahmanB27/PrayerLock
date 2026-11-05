@@ -1,8 +1,8 @@
 # Current screenshot refresh — November 5, 2026
 
-The site uses native version 1.2 screenshots with Dhuhr and Asr daytime views emphasized. The English and Arabic hero loops start at Dhuhr and show all five prayers. The interactive selector lets visitors inspect each sky. The widget gallery uses native English renders, labelled as English on the Arabic page.
+The site uses native version 1.2 screenshots. The English and Arabic hero loops start at Dhuhr and show all five prayers, with Maghrib and Asr as the side images. The interactive selector lets visitors inspect each sky. The Qibla stills and widget gallery use the November 5 noon export. The widget examples are labelled as English on the Arabic page.
 
-Capture provenance is in `Website/tools/capture/refresh-20261105/` in the local workspace. Public-path hashes and source selection are in `Website/output/nov5-screenshot-integration.json`. Earlier records below are historical.
+Capture provenance is in `Website/tools/capture/refresh-20261105/` and `Website/tools/capture/refresh-20261105-noon/` in the local workspace. The screenshot integration records are in `Website/output/`. Earlier records below are historical.
 
 # Current screenshot refresh — November 3, 2026
 
