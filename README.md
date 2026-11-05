@@ -28,7 +28,7 @@ For a clean upload, extract `release/prayerlock-pages.zip` and put its contents 
 4. Push the files. The included workflow copies only the public HTML, CSS, JavaScript, assets, and privacy page into the Pages artifact.
 5. Open the successful deployment's URL. The Play Console privacy URL is `https://abdulrahmanb27.github.io/PrayerLock/privacy/`.
 
-Every site link and asset path is relative, so repository subpaths work. GitHub Pages serves `privacy/index.html` as `/privacy/`; `/privacy` normally redirects to the trailing slash. Use the trailing-slash URL in Play Console.
+Internal links and asset paths are relative so repository subpaths work. GitHub Pages serves `privacy/index.html` as `/privacy/` and normally redirects `/privacy` to the trailing-slash URL. Use the trailing-slash URL in Play Console.
 
 If you keep this folder within a larger repository, GitHub only discovers workflows at that repository's root. Move `.github/workflows/pages.yml` to the root `.github/workflows/` and change the preparation step to copy from `Website/`. A dedicated website repository is the simplest setup.
 
@@ -40,9 +40,9 @@ The English policy reproduces the native policy, including its Permissions and L
 
 The app's current `privacyUrl` opens the homepage; the dedicated policy route is `/PrayerLock/privacy/`. The website refresh does not modify Android source.
 
-## When the app launches
+## Google Play link
 
-In `index.html` and `ar/index.html`, replace the “Coming soon” link/status with the real Google Play listing, then update the film outro. No invented listing URL is used. Support links already use `prayerlockapp@gmail.com`.
+Both homepages link to the [PrayerLock Google Play listing](https://play.google.com/store/apps/details?id=com.prayerlockapp) and identify the current closed test for invited testers. When the production release is available, update the availability copy in both languages and retain the same listing URL. The support address is `prayerlockapp@gmail.com`.
 
 ## Files
 

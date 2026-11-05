@@ -10,7 +10,7 @@ Use white #FFFFFF, mist #F5F6F8, ink #182238, muted slate #596477, sky #387AB4, 
 
 Page sequence: restrained navigation; centered “Make room for prayer.” hero with three app views; explanation of focus lockouts; interactive five-prayer sky gallery; Qibla/Adhkar/focus details; short local /brag product film; launch status and contact; privacy footer. Motion supports sky transitions and product demonstration. Provide a global pause control and reduced-motion support. Mobile layouts retain generous spacing with smaller type and one main phone view.
 
-The static policy reproduces the in-app text and effective date, with the supplied support address prayerlockapp@gmail.com. It must load without JavaScript or login. Preserve wording; document source-audit discrepancies separately instead of silently rewriting the user's policy. No Google Play URL exists, so show an honest coming-soon state, not a dead download button.
+The static policy reproduces the in-app text and effective date, with the supplied support address prayerlockapp@gmail.com. It must load without JavaScript or login. Document source-audit discrepancies separately. Both homepages link to the canonical Google Play listing and identify current availability as a closed test for invited testers.
 
 ## Implementation plan
 
