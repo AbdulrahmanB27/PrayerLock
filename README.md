@@ -4,7 +4,7 @@ A static product page and privacy policy for PrayerLock. No build, package insta
 
 Production: [English](https://abdulrahmanb27.github.io/PrayerLock/) · [Arabic](https://abdulrahmanb27.github.io/PrayerLock/ar/) · [Privacy policy](https://abdulrahmanb27.github.io/PrayerLock/privacy/) · [Arabic policy](https://abdulrahmanb27.github.io/PrayerLock/ar/privacy/). Repository: [AbdulrahmanB27/PrayerLock](https://github.com/AbdulrahmanB27/PrayerLock).
 
-The November 4 refresh follows the latest source export (still version 1.1): brighter native daytime screens, Pre-Adhan reminders, expandable Hadith references, revised Qibla controls, six widgets and a new 22-second /brag film. The focus illustration uses the transparent brand mark, and the language switch is integrated into the navigation. The English privacy text and date remain unchanged; the public Arabic policy retains the fuller translation. Source evidence is in [the current alignment review](docs/source-refresh-20261104.md).
+The November 5 refresh follows app version 1.2. The hero loops through all five prayer skies, starting at Dhuhr, and the rest of the page favors native daytime imagery. The Qibla compass, Adhkar controls, widgets and 22-second film use the current app screens. Source evidence is in [the current alignment review](docs/source-refresh-20261105.md).
 
 ## Preview locally
 
@@ -36,7 +36,7 @@ GitHub's [official Pages workflow guide](https://docs.github.com/en/pages/gettin
 
 ## Before the Google Play submission
 
-The website reproduces the native policy, including its Permissions and Local Storage sections, **January 1, 2024** effective date, and supplied contact address. All four substantive blocks still match the current source. [The current source review](docs/source-refresh-20261104.md) records remaining policy/implementation differences. The notes are excluded from the Pages deployment. Hosting a policy does not establish Google Play approval.
+The English policy reproduces the native policy, including its Permissions and Local Storage sections, **January 1, 2024** effective date, and supplied contact address. The public Arabic policy is a full translation of the English policy. [The current source review](docs/source-refresh-20261105.md) records policy and implementation details. The deployment workflow serves the policy pages and excludes the review notes.
 
 The app's current `privacyUrl` opens the homepage; the dedicated policy route is `/PrayerLock/privacy/`. The website refresh does not modify Android source.
 

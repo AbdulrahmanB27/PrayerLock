@@ -1,4 +1,4 @@
-PrayerLock product film — November 4, 2026
+PrayerLock product film — November 5, 2026
 
 Music: Happy Beats / Business Moves Vol. 12 by Sascha Ende, ende.app.
 Music: Sascha Ende, ende.app (CC BY 4.0)
@@ -19,4 +19,4 @@ states are genuine app colors, with no artificial light-theme treatment.
 Typography: self-hosted Plus Jakarta Sans and Tajawal from the app and site.
 Font licenses accompany the site in assets/fonts/.
 
-Created using the full /brag workflow and local Hyperframes rendering.
+Refreshed with PrayerLock 1.2 captures in the existing /brag composition.

@@ -1,8 +1,8 @@
-# Current screenshot refresh — November 4, 2026
+# Current screenshot refresh — November 5, 2026
 
-All visible phone screenshots use the latest native export, favouring genuine Dhuhr/Asr daytime colors. Main features now use brighter native Qibla, Adhkar and Dhuhr focus views; the hero uses Fajr, Dhuhr and Asr. Five original prayer moments remain in the interactive selector. The widget gallery uses three actual English native widget renders, explicitly labelled English on the Arabic page. No image was recolored and no separate light theme is claimed.
+The site uses native version 1.2 screenshots with Dhuhr and Asr daytime views emphasized. The English and Arabic hero loops start at Dhuhr and show all five prayers. The interactive selector lets visitors inspect each sky. The widget gallery uses native English renders, labelled as English on the Arabic page.
 
-Usable capture provenance: `Website/tools/capture/refresh-20261104/README.md` and `capture-manifest.json` in the local workspace. Public-path hashes and the source selection are in `Website/output/nov4-screenshot-integration.json`. Earlier records below are historical.
+Capture provenance is in `Website/tools/capture/refresh-20261105/` in the local workspace. Public-path hashes and source selection are in `Website/output/nov5-screenshot-integration.json`. Earlier records below are historical.
 
 # Current screenshot refresh — November 3, 2026
 
