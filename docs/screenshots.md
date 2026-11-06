@@ -1,10 +1,18 @@
-# Current screenshot refresh — November 5, 2026
+# Current screenshot refresh — November 6, 2026
+
+The English and Arabic pages use v1.3 captures of all five prayer skies, the timetable, Qibla, Adhkar and Tasbeeh. The two hero GIFs loop from Dhuhr through all five prayers. The widget gallery uses three English native widget examples. Both Adhkar GIFs and the product film were rebuilt from the new captures.
+
+The square website icon uses the official native foreground on the native adaptive background. The focus illustration uses the transparent dark vector for legibility on the light page.
+
+Source captures, reproducibility notes and the integration manifest are under `assets/screenshots/refresh-20261106/`, `tools/capture/refresh-20261106/` and `output/` in the website workspace. The earlier sections record past releases.
+
+# Screenshot refresh — November 5, 2026
 
 The site uses native version 1.2 screenshots. The English and Arabic hero loops start at Dhuhr and show all five prayers, with Maghrib and Asr as the side images. The interactive selector lets visitors inspect each sky. The Qibla stills and widget gallery use the November 5 noon export. The widget examples are labelled as English on the Arabic page.
 
 Capture provenance is in `Website/tools/capture/refresh-20261105/` and `Website/tools/capture/refresh-20261105-noon/` in the local workspace. The screenshot integration records are in `Website/output/`. Earlier records below are historical.
 
-# Current screenshot refresh — November 3, 2026
+# Screenshot refresh — November 3, 2026
 
 All visible website screenshots and both language GIF sets now use the version 1.1 export. There are 36 native 780 × 1688 captures and 28 passed native tests. Production main-source hashes match all 81 current files. The public timetable options image uses a genuine scrolled seven-row state, including optional Sunrise and Last Third. Harness, sample settings, hashes and limitations are in `Website/tools/capture/refresh-20261103/` in the local workspace. Public-path integration hashes are in `Website/output/current-screenshot-integration.json`. Earlier provenance below is historical.
 

@@ -12,9 +12,9 @@
     <link
       rel="icon"
       type="image/svg+xml"
-      href="../assets/images/app-icon.svg?v=20261104-152322"
+      href="../assets/images/app-icon.svg?v=20261106"
     />
-    <link rel="stylesheet" href="../styles.css?v=20261104-152322" />
+    <link rel="stylesheet" href="../styles.css?v=20261106" />
     <link rel="alternate" hreflang="en" href="./" />
     <link rel="alternate" hreflang="ar" href="../ar/privacy/" />
   </head>
@@ -24,7 +24,7 @@
       <nav class="nav wrap" aria-label="Main navigation">
         <a class="brand" href="../"
           ><img
-            src="../assets/images/app-icon.svg?v=20261104-152322"
+            src="../assets/images/app-icon.svg?v=20261106"
             alt=""
             width="34"
             height="34"
@@ -48,8 +48,8 @@
           <p>In this policy</p>
           <nav aria-label="Privacy policy sections">
             <a href="#data">Data collection and usage</a
-            ><a href="#permissions">Permissions</a
-            ><a href="#storage">Local Storage</a
+            ><a href="#permissions">Device Access and Services</a
+            ><a href="#storage">Storage, Backup and Deletion</a
             ><a href="#changes">Changes to this policy</a
             ><a href="#contact">Contact</a>
           </nav>
@@ -63,68 +63,77 @@
             PrayerLock for Android<br />Effective Date: January 1, 2024
           </p>
           <p class="policy-intro">
-            This is the privacy policy provided in the PrayerLock app. For
-            questions about this policy, contact
+            This policy describes how the PrayerLock Android app handles
+            information. For questions about this policy, contact
             <a href="mailto:prayerlockapp@gmail.com">prayerlockapp@gmail.com</a
             >.
           </p>
           <section id="data">
             <h2>1. Data Collection and Usage</h2>
             <p>
-              PrayerLock is designed to be privacy-first. We do not collect,
-              transmit, or store any personal data, usage stats, or tracking
-              metrics off your device. All functions, including the calculation
-              of prayer times, lockout timers, and geographical adjustments, are
-              performed entirely locally on your phone.
+              PrayerLock calculates prayer times and Qibla direction on your
+              device. It uses your settings to show your timetable, provide
+              reminders, and personalize features such as Adhkar and focus
+              sessions. You can use PrayerLock without an account.
             </p>
           </section>
           <section id="permissions">
-            <h2>2. Permissions</h2>
+            <h2>2. Device Access and Services</h2>
             <p>
-              To function as intended, PrayerLock uses the following
-              permissions:
+              PrayerLock uses Android permissions and services for the
+              following features.
             </p>
             <ul>
               <li>
-                <strong>Location &amp; Geocoding:</strong> Used locally to
-                calculate accurate prayer times, Qibla direction, and optional
-                geofenced lockout/Masjid zones. When you search for a city or
-                resolve a GPS coordinate label, Android&#x27;s Geocoder service
-                may query network geocoding providers.
+                <strong>Location and geocoding.</strong> If you grant location
+                access, PrayerLock can use your device location for prayer
+                times, Qibla, and optional saved zones. You can also enter
+                coordinates manually. When you search for a city or Android
+                looks up a place name for coordinates, Android’s Geocoder
+                service may send the search text or coordinates to its network
+                geocoding providers.
               </li>
               <li>
-                <strong>Draw Over Other Apps:</strong> Used exclusively to
-                display the full-screen focus lockout reminder during prayer
-                times. We do not read screen contents, keystrokes, or personal
-                messages.
+                <strong>App selection.</strong> PrayerLock lists apps with a
+                launcher entry when you open settings that ask you to select
+                apps. Your selections are saved in the app’s local preferences.
               </li>
               <li>
-                <strong>App Visibility (&lt;queries&gt;):</strong> Used strictly
-                on-device so you can choose which launchable apps are exempted
-                or restricted during prayer/Tahseen/interval windows. Your app
-                list never leaves your device.
+                <strong>Notifications and audio.</strong> PrayerLock uses
+                Android alarms and notifications for reminders and can play
+                your selected Adhan audio. Delivery depends on device settings
+                and Android scheduling. Optional Masjid mode can change your
+                ringer mode. If you select a custom audio file, Android can
+                grant access to that file for later playback.
               </li>
               <li>
-                <strong>Notifications, Alarms &amp; Audio/DND:</strong> Used to
-                trigger exact prayer reminders, Adhan audio, and optional Masjid
-                vibrate mode.
+                <strong>NFC and clipboard.</strong> If an NFC tag is linked,
+                PrayerLock uses its identifier for check-in. If you tap a
+                Hadith citation to copy it, PrayerLock places the citation on
+                the Android clipboard.
               </li>
             </ul>
           </section>
           <section id="storage">
-            <h2>3. Local Storage</h2>
+            <h2>3. Storage, Backup and Deletion</h2>
             <p>
-              All your schedules and preferences are stored on your device using
-              Android SharedPreferences. PrayerLock does not operate any remote
-              analytics or tracking servers.
+              PrayerLock stores schedules, coordinates and saved zones, app
+              selections, linked tag identifiers, references to selected audio,
+              and Adhkar settings and completion state in private app storage
+              so they are available between sessions.
+              The current Android backup rules exclude PrayerLock’s main
+              preferences and its Adhkar preferences from backup and device
+              transfer. Android can handle other eligible app data according to
+              your device and backup settings. To remove local PrayerLock data,
+              clear the app’s storage in Android settings. This also resets your
+              preferences.
             </p>
           </section>
           <section id="changes">
             <h2>4. Changes to This Policy</h2>
             <p>
-              We may update our Privacy Policy occasionally to reflect app
-              updates and features. Any updates will be available within the
-              app.
+              We may update this policy as PrayerLock changes. The latest
+              version is available on this page, linked from the app.
             </p>
           </section>
           <section id="contact" class="policy-contact">
@@ -143,7 +152,7 @@
       <div class="wrap footer-content">
         <a class="brand" href="../"
           ><img
-            src="../assets/images/app-icon.svg?v=20261104-152322"
+            src="../assets/images/app-icon.svg?v=20261106"
             width="28"
             height="28"
             alt=""
