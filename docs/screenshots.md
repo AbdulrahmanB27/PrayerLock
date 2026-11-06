@@ -1,4 +1,10 @@
-# Current screenshot refresh — November 6, 2026
+# Current screenshot refresh for PrayerLock 1.5
+
+The English and Arabic site uses fresh native samples from the November 6 v1.5 export. Qibla and Adhkar use daytime scenes. The hero cycles through all five prayers with Maghrib and Asr alongside it, and the widget gallery includes an Isha view. The hero GIFs, Adhkar GIFs and film were generated from the current native captures. Samples use controlled phone data and the actual widget providers.
+
+The source and integration evidence is in the workspace under Website/assets/screenshots/refresh-20261106-latest/, Audit/2026-11-06-latest/native-evidence/ and Website/output/.
+
+# Screenshot refresh — November 6, 2026
 
 The English and Arabic pages use v1.3 captures of all five prayer skies, the timetable, Qibla, Adhkar and Tasbeeh. The two hero GIFs loop from Dhuhr through all five prayers. The widget gallery uses three English native widget examples. Both Adhkar GIFs and the product film were rebuilt from the new captures.
 

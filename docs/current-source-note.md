@@ -1,6 +1,6 @@
 # Source observation during the Qibla/Adhkar asset refresh
 
-Historical review. Use [the November 6 alignment review](source-refresh-20261106.md) for app version 1.3.
+Historical review. Use [the latest November 6 alignment review](source-refresh-v15.md) for app version 1.5.
 
 The screenshot refresh uses the updated Android export and preserves the app files. It does not certify the app's runtime or release readiness. This note records a separate, concrete source finding rather than treating a UI capture as an enforcement test.
 

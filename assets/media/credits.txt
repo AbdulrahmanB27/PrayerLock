@@ -19,4 +19,4 @@ states are genuine app colors, with no artificial light-theme treatment.
 Typography: self-hosted Plus Jakarta Sans and Tajawal from the app and site.
 Font licenses accompany the site in assets/fonts/.
 
-Refreshed with PrayerLock 1.3 captures in the existing /brag composition.
+Refreshed with PrayerLock 1.5 captures in the existing /brag composition.
