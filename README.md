@@ -4,7 +4,7 @@ A static product page and privacy policy for PrayerLock. No build, package insta
 
 Production: [English](https://abdulrahmanb27.github.io/PrayerLock/) · [Arabic](https://abdulrahmanb27.github.io/PrayerLock/ar/) · [Privacy policy](https://abdulrahmanb27.github.io/PrayerLock/privacy/) · [Arabic policy](https://abdulrahmanb27.github.io/PrayerLock/ar/privacy/). Repository: [AbdulrahmanB27/PrayerLock](https://github.com/AbdulrahmanB27/PrayerLock).
 
-The latest November 6 refresh follows app version 1.5. The hero loops through all five prayer skies, starting at Dhuhr. Qibla and Adhkar use bright native scenes, while the Home views show different prayer phases. Source evidence is in [the current alignment review](docs/source-refresh-v15.md).
+The November 9 refresh follows app version 1.9. The hero cycles through all five prayers. Qibla uses a bright daytime capture and Adhkar uses the native sunset palette. The images focus on the timetable, direction and remembrance. Source evidence is in [the current alignment review](docs/source-refresh-20261109.md).
 
 ## Preview locally
 
@@ -36,20 +36,20 @@ GitHub's [official Pages workflow guide](https://docs.github.com/en/pages/gettin
 
 ## Before the Google Play submission
 
-The public policies describe v1.5’s permissions and data handling in English and Arabic, with the existing **January 1, 2024** effective date and support address. [The current source review](docs/source-refresh-v15.md) records the differences between the public and embedded policies. The deployment workflow serves the policy pages.
+The public policies describe v1.9’s permissions and data handling in English and Arabic, with the existing **January 1, 2024** effective date and support address. [The current source review](docs/source-refresh-20261109.md) records the differences between the public and embedded policies. The deployment workflow serves the policy pages.
 
 The app links to the dedicated English and Arabic policy routes.
 
 ## Google Play link
 
-Both homepages link to the [PrayerLock Google Play listing](https://play.google.com/store/apps/details?id=com.prayerlockapp). The support address is `prayerlockapp@gmail.com`.
+Both homepages guide visitors through joining [PrayerLockAlpha](https://groups.google.com/g/prayerlockalpha), [enabling test access](https://play.google.com/apps/testing/com.prayerlockapp), then opening the existing [Google Play listing](https://play.google.com/store/apps/details?id=com.prayerlockapp). The steps ask visitors to use the same Google account. The support address is `prayerlockapp@gmail.com`.
 
 ## Files
 
 - `index.html`, `styles.css`, `app.js`: the product page, responsive layout and progressive interactions.
 - `privacy/index.html`: the independent policy document.
 - `assets/`: self-hosted brand/fonts, current native Android screens in both languages, four GIFs and the 22-second /brag film with captions.
-- `brag-output-2026-11-06-v15/`: current editable /brag composition, render, credits and share copy in the local workspace. Excluded from deployment.
+- `brag-output-2026-11-09/`: current editable /brag composition, render, credits and share copy in the local workspace. Excluded from deployment.
 - `docs/`: design decisions, asset provenance and source-audit notes. Excluded from deployment.
 - `output/playwright/`: local visual QA screenshots. Excluded from deployment.
 - `release/prayerlock-pages.zip`: a compact, ready-to-upload repository snapshot.

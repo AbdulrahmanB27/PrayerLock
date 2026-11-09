@@ -1,4 +1,12 @@
-# Current screenshot refresh for PrayerLock 1.5
+# Current screenshot refresh for PrayerLock 1.9
+
+The November 9 refresh uses current native source renders in English and Arabic. The website keeps a curated set of core views with daytime Qibla and sunset Adhkar. All Adhkar stills, counter/pager GIF frames and film states use the app's Maghrib colors. The hero cycles through all five prayers.
+
+The Play Store set contains four selected scenes for phones and both tablet classes in both languages. The scenes are the prayer timetable, a standalone Maghrib view, Qibla and sunset Adhkar.
+
+Native evidence is in Website/tools/capture/refresh-20261109/ and PlayStore/source/capture/refresh-20261109/ in the workspace. Asset integration hashes are in Website/output/nov9-screenshot-integration.json and nov9-media-integration.json.
+
+# Screenshot refresh for PrayerLock 1.5
 
 The English and Arabic site uses fresh native samples from the November 6 v1.5 export. Qibla and Adhkar use daytime scenes. The hero cycles through all five prayers with Maghrib and Asr alongside it, and the widget gallery includes an Isha view. The hero GIFs, Adhkar GIFs and film were generated from the current native captures. Samples use controlled phone data and the actual widget providers.
 

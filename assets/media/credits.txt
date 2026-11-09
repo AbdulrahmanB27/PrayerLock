@@ -1,4 +1,4 @@
-PrayerLock product film — November 6, 2026
+PrayerLock product film — November 9, 2026
 
 Music: Happy Beats / Business Moves Vol. 12 by Sascha Ende, ende.app.
 Music: Sascha Ende, ende.app (CC BY 4.0)
@@ -13,10 +13,10 @@ https://creativecommons.org/publicdomain/zero/1.0/
 
 Visuals: PrayerLock's current native Android interface, native widgets and
 original source-derived app icon. Phone screens use controlled sample data;
-widgets use the actual provider rendering and sample preferences. Daytime
-states are genuine app colors, with no artificial light-theme treatment.
+widgets use the actual provider rendering and sample preferences. Adhkar
+uses the native sunset palette and Qibla uses the native daytime palette.
 
 Typography: self-hosted Plus Jakarta Sans and Tajawal from the app and site.
 Font licenses accompany the site in assets/fonts/.
 
-Refreshed with PrayerLock 1.5 captures in the existing /brag composition.
+Refreshed with PrayerLock 1.9 captures in the existing /brag composition.
