@@ -56,4 +56,4 @@ Both homepages guide visitors through joining [PrayerLockAlpha](https://groups.g
 
 Use `assets/fonts/OFL.txt` when redistributing the Plus Jakarta Sans font.
 Tajawal's license is included as `assets/fonts/Tajawal-OFL.txt`.
-Film audio credits and license links are in `assets/media/credits.txt` and below the player. Playback starts only after a visitor selects play.
+Film source details are in `assets/media/credits.txt` and below the player. The current film is silent and playback starts after a visitor selects play.

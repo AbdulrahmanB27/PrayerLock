@@ -192,6 +192,49 @@ button {
 .nav-availability span {
   font-size: 18px;
 }
+.alpha-banner {
+  background: var(--mist);
+  border-bottom: 1px solid var(--line);
+}
+.alpha-banner-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding-block: 18px;
+}
+.alpha-banner-copy strong {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.25px;
+}
+.alpha-banner-copy p {
+  margin-top: 3px;
+  color: var(--muted);
+  font-size: 12px;
+}
+.alpha-banner-actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-shrink: 0;
+}
+.alpha-banner-actions .button {
+  min-height: 44px;
+  white-space: nowrap;
+}
+@media (max-width: 760px) {
+  .alpha-banner-content {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+    padding-block: 16px;
+  }
+  .alpha-banner-actions {
+    gap: 22px;
+  }
+}
 .hero {
   padding-top: 66px;
   overflow: hidden;
